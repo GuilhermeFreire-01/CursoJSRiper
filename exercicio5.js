@@ -17,4 +17,4 @@ function saudacao(nome){
 
 console.log(saudacao("Mister"))
 
-//fessô, eu fiz assim pra ser mais legal, peguei do chat não tá bom
+
