@@ -4,3 +4,4 @@ document.getElementById("aura").textContent = "Los Pitufos 67";
 let paragrafo = document.getElementById("aura");
 paragrafo.style.color = "blue";
 //3. Adicione uma classe CSS a um botão existente.
+document.querySelector("button").classList.add("botao")

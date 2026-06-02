@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head><favicon><img src="1d.webp" alt="1d.webp"></favicon>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input id='n1'> + <input id='n2'>
+<button onclick='somar()'>Somar</button>
+<p id='resultado'></p>
+<script>
+function somar() {
+ let a = parseFloat(document.getElementById('n1').value);
+ let b = parseFloat(document.getElementById('n2').value);
+ document.getElementById('resultado').textContent = a + b;
+}
+</script>
+</body>
+</html>
