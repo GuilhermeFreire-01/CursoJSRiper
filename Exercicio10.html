@@ -1,21 +1,74 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head><favicon><img src="1d.webp" alt="1d.webp"></favicon>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="exercise10.css">
 </head>
 <body>
-    
-    <input id='n1'> + <input id='n2'>
-<button onclick='somar()'>Somar</button>
-<p id='resultado'></p>
-<script>
-function somar() {
- let a = parseFloat(document.getElementById('n1').value);
- let b = parseFloat(document.getElementById('n2').value);
- document.getElementById('resultado').textContent = a + b;
-}
-</script>
+    <h1 class="title">CALCULADORA</h1>
+    <form id="calculadora" class="calculadora">
+
+    <input type="text" class="visor" id="visor" readonly>
+
+        <div class="buttons">
+
+            <div class="numerical">
+
+                <div class="numbers">
+                    <button type="button" class="btn" onclick="adicionarAoVisor('1')">1</button>
+                    <button type="button" class="btn" onclick="adicionarAoVisor('2')">2</button>
+                    <button type="button" class="btn" onclick="adicionarAoVisor('3')">3</button>
+                </div>
+
+                <div class="numbers">
+                    <button type="button" class="btn" onclick="adicionarAoVisor('4')">4</button>
+                    <button type="button" class="btn" onclick="adicionarAoVisor('5')">5</button>
+                    <button type="button" class="btn" onclick="adicionarAoVisor('6')">6</button>
+                </div>
+
+                <div class="numbers">
+                    <button type="button" class="btn" onclick="adicionarAoVisor('7')">7</button>
+                    <button type="button" class="btn" onclick="adicionarAoVisor('8')">8</button>
+                    <button type="button" class="btn" onclick="adicionarAoVisor('9')">9</button>
+                </div>
+
+                <div class="numbers">
+                    <button type="button" class="btn" onclick="adicionarAoVisor('0')">0</button>
+                </div>
+
+            </div>
+
+            <div class="operation">
+
+                <div class="operators">
+                    <button type="button" class="btn operator" onclick="adicionarAoVisor('+')">+</button>
+                    <button type="button" class="btn operator" onclick="adicionarAoVisor('-')">-</button>
+                    <button type="button" class="btn operator" onclick="adicionarAoVisor('*')">x</button>
+                </div>
+
+                <div class="operators">
+                    <button type="button" class="btn operator" onclick="adicionarAoVisor('/')">/</button>
+                    <button type="button" class="btn operator" onclick="adicionarAoVisor('**')">^</button>
+                    <button type="button" class="btn operator" onclick="calcular()">=</button>
+                </div>
+
+                <div class="operators">
+                    <button type="button" class="btn operator" onclick="adicionarAoVisor('(')">(</button>
+                    <button type="button" class="btn operator" onclick="adicionarAoVisor(')')">)</button>
+                    <button type="button" class="btn operator" onclick="adicionarAoVisor('.')">.</button>
+                </div>
+
+                <div class="operators">
+                    <button type="button" class="btn clear" onclick="limparVisor()">Clear</button>
+                    <button type="button" class="btn clear" onclick="apagarUltimo()">←</button>
+                </div>
+            </div>
+
+        </div>
+
+    </form>
+    <script src="exercicio10.js"></script>
 </body>
 </html>
